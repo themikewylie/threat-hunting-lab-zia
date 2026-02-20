@@ -75,18 +75,5 @@ Test it:
 ls -lah
 ```
 
----
-
-## Step 3 — Launch Jupyter Notebook
-
-Inside the terminal:
-
-```bash
-jupyter notebook --ip=0.0.0.0 --no-browser --allow-root
-```
-
-Follow the generated URL.
-
-Or use the built-in notebook explorer in VS Code.
 
 
