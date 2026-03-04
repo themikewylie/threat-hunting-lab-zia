@@ -1,0 +1,8 @@
+ipywidgets==8.1.5
+jupyterlab_widgets==3.0.13
+rapidfuzz==3.9.7
+tldextract==5.1.2
+scikit-learn==1.5.2
+pandas==2.2.3
+numpy==2.0.2
+ipykernel==6.29.5
