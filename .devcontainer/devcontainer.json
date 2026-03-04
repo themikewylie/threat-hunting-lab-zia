@@ -11,13 +11,16 @@
       "settings": {
         "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
         "python.terminal.activateEnvironment": true,
+
         "jupyter.interactiveWindowMode": "perFile",
         "jupyter.askForKernelRestart": false
       }
     }
   },
 
-  "postCreateCommand": "python -m venv .venv && . .venv/bin/activate && python -m pip install --upgrade pip && python -m pip install -r requirements.txt && python -m ipykernel install --user --name threat-hunting-lab --display-name \"Python (Threat Hunting Lab)\"",
+  "onCreateCommand": "python -m venv .venv && . .venv/bin/activate && python -m pip install --upgrade pip && python -m pip install -r requirements.txt",
+
+  "postCreateCommand": ". .venv/bin/activate && python -m ipykernel install --user --name threat-hunting-lab --display-name \"Python (Threat Hunting Lab)\"",
 
   "remoteUser": "vscode"
 }
