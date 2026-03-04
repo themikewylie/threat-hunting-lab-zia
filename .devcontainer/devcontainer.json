@@ -1,6 +1,7 @@
 {
   "name": "Threat Hunting Lab (Python + Jupyter)",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
+
   "customizations": {
     "vscode": {
       "extensions": [
@@ -8,13 +9,15 @@
         "ms-toolsai.jupyter"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
         "python.terminal.activateEnvironment": true,
         "jupyter.interactiveWindowMode": "perFile",
         "jupyter.askForKernelRestart": false
       }
     }
   },
-  "postCreateCommand": "python -m pip install --upgrade pip && pip install -r requirements.txt && python -m ipykernel install --user --name lab --display-name \"Python (lab)\"",
+
+  "postCreateCommand": "python -m venv .venv && . .venv/bin/activate && python -m pip install --upgrade pip && python -m pip install -r requirements.txt && python -m ipykernel install --user --name threat-hunting-lab --display-name \"Python (Threat Hunting Lab)\"",
+
   "remoteUser": "vscode"
 }
