@@ -1,0 +1,4 @@
+{
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "jupyter.jupyterServerType": "local"
+}
