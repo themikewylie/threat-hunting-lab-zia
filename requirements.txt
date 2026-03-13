@@ -1,0 +1,10 @@
+pandas
+ipywidgets
+rapidfuzz
+tldextract
+scikit-learn
+numpy
+ipykernel
+jupyterlab_widgets
+plotly
+matplotlib
