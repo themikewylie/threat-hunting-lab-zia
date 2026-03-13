@@ -6,7 +6,8 @@
       "extensions": [
         "ms-python.python",
         "ms-toolsai.jupyter",
-        "mathematic.vscode-pdf"
+        "mathematic.vscode-pdf",
+        "mechatroner.rainbow-csv"
       ]
     }
   },
