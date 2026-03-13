@@ -8,3 +8,4 @@ ipykernel
 jupyterlab_widgets
 plotly
 matplotlib
+nbformat
