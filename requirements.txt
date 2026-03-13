@@ -9,3 +9,5 @@ jupyterlab_widgets
 plotly
 matplotlib
 nbformat
+widgetsnbextension
+jupyter
