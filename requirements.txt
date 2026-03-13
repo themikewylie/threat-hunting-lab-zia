@@ -11,3 +11,4 @@ matplotlib
 nbformat
 widgetsnbextension
 jupyter
+jinja2
