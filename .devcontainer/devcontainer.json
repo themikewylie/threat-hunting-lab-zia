@@ -15,8 +15,5 @@
       }
     }
   },
-  "postCreateCommand": "python3 -m pip install -r requirements.txt && python3 -m ipykernel install --user --name python3 --display-name \"Python 3.12 (Workshop)\"",
-  "postAttachCommand": {
-    "register-kernel": "python3 -m ipykernel install --user --name python3 --display-name \"Python 3.12 (Workshop)\""
-  }
+  "postCreateCommand": "python3 -m pip install -r requirements.txt && python3 -m ipykernel install --user --name python3 --display-name \"Python 3.12 (Workshop)\""
 }
