@@ -46,6 +46,10 @@ You get:
 * Jupyter Notebook
 * Pre-loaded datasets
 * Pre-installed libraries
+* Pre-installed extensions
+* CSV log files extracted from Zscaler Internet Access (ZIA)
+* Lab guides
+* Lab answer guides
 
 ---
 
@@ -153,20 +157,7 @@ getting_started.ipynb
 
 ---
 
-## Step 7 — Install Required Extensions (First-Time Setup)
-
-The first time you open a Jupyter notebook in Codespaces, you will likely see a prompt asking to install:
-
-* Python extension
-* Jupyter extension
-
-These are required.
-
-At the bottom of the screen, click **Install**.
-
----
-
-## Step 8 — Run the First Python Test Cell
+## Step 7 — Run the First Python Test Cell
 
 Inside `getting_started.ipynb`, you will see a simple `print()` statement.
 
@@ -177,9 +168,9 @@ Then either:
 * Press **Shift + Enter**
 * Or click the ▶ **Run** button
 
-If everything is configured properly, you will see output appear below the cell.
+If everything is configured properly, you will see output appear below the cell. NOTE: This may take a few minutes the first time you run the cell due to libraries being installed. Review the Terminal for status. 
 
-This confirms:
+Running the cell confirms:
 
 * Python is working
 * Jupyter is connected
@@ -187,18 +178,9 @@ This confirms:
 
 ---
 
-## Step 9 — Select the Correct Python Interpreter
+## Step 8 — Select the Correct Python Interpreter
 
-When running the first code cell, you may be prompted to install/enable:
-
-**Python + Jupyter extensions**
-
-1. Click **Install** or **Enable**
-2. Wait for installation to complete
-
-This only needs to be done once per Codespace.
-
-You may also be prompted to select a Python environment.
+When running the first code cell, you may be prompted to select a Python Kernel / Interpreter
 
 Click:
 
@@ -209,7 +191,7 @@ Select Kernel → Python Environments…
 Then choose:
 
 ```
-Python 3.12.1  ~/python/current/bin/python3
+Python 3.12.13  ~/usr/local/bin/python3
 ```
 
 This ensures:
@@ -222,7 +204,7 @@ If you do not select the correct environment, cells may fail to run.
 
 ---
 
-## Step 10 — Run the Notebook Cells
+## Step 9 — Run the Notebook Cells
 
 After confirming Python works:
 
@@ -246,21 +228,7 @@ This will:
 
 ---
 
-## Step 11 — Monitor Package Installation
-
-If this is your first run, you may see `pip` installation output.
-
-This is normal.
-
-Scroll through the output and look for:
-
-* Successful installs
-* No red error messages
-* Confirmation that dependencies were installed
-
----
-
-## Step 12 — Verify CSV Data Loads Correctly
+## Step 10 — Verify CSV Data Loads Correctly
 
 The notebook will read lab datasets from:
 
@@ -285,7 +253,7 @@ If you see rows and columns displayed, your environment is fully operational.
 ### Notebook Will Not Run?
 
 * Ensure Python + Jupyter extensions are installed
-* Confirm correct interpreter selected (Python 3.12.1)
+* Confirm correct interpreter selected (Python 3.12.13)
 
 ### CSV Not Found?
 
